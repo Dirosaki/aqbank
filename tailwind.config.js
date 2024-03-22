@@ -1,7 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: ['class'],
   content: ['./src/**/*.{ts,tsx}'],
   theme: {
+    container: {
+      center: true,
+      padding: '2rem',
+      screens: {
+        '2xl': '1400px',
+      },
+    },
     extend: {
       colors: {
         primary: {
@@ -48,20 +56,48 @@ export default {
           800: '#03623F',
         },
         info: {
+          100: '#E2EBFD',
           200: '#CAD9FB',
           800: '#373C9C',
         },
         warning: {
           200: '#FADFA8',
+          400: '#F7CB7A',
           800: '#944818',
         },
         error: {
+          50: '#FDF4F3',
+          100: '#FBE6E5',
           200: '#F7C3C0',
+          500: '#DE5C55',
           800: '#8D2D27',
         },
         'off-white': '#F9F9F9',
+        title: '#1A1A1A',
+      },
+      backgroundImage: {
+        login: "url('@/assets/images/login-bg.png')",
+        register: "url('@/assets/images/register-bg.png')",
+        banner: "url('@/assets/images/dashboard-banner.png')",
+      },
+      fontFamily: {
+        inter: "'Inter'",
+      },
+      keyframes: {
+        'accordion-down': {
+          from: { height: '0' },
+          to: { height: 'var(--radix-accordion-content-height)' },
+        },
+        'accordion-up': {
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: '0' },
+        },
+      },
+      animation: {
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out',
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-animate')],
 }
