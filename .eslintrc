@@ -26,6 +26,7 @@
     "import/prefer-default-export": "off",
     "react/react-in-jsx-scope": "off",
     "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": "off",
     "react/jsx-no-target-blank": [
       "error",
       {
@@ -41,7 +42,8 @@
       }
     ],
     "@typescript-eslint/no-unused-expressions": ["error", { "allowTernary": true }],
-    "@typescript-eslint/array-type": ["error", { "default": "array" }]
+    "@typescript-eslint/array-type": ["error", { "default": "array" }],
+    "jsx-a11y/label-has-associated-control": ["error", { "assert": "either" }]
   },
   "ignorePatterns": ["vite.config.ts", "tailwind.config.js", "postcss.config.js"]
 }
