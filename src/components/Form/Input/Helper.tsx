@@ -2,11 +2,11 @@ import { ComponentProps } from 'react'
 
 import { Icon } from '@/components/Icon'
 
-type InputHelperProps = Omit<ComponentProps<'span'>, 'children'> & {
+type HelperProps = Omit<ComponentProps<'span'>, 'children'> & {
   helperText: string | undefined
 }
 
-export function InputHelper({ className, helperText, ...props }: InputHelperProps) {
+export function Helper({ className, helperText, ...props }: HelperProps) {
   if (!helperText) return null
 
   return (

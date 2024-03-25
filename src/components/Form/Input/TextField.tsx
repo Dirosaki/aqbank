@@ -1,21 +1,20 @@
 import { ComponentProps, ReactElement, cloneElement, forwardRef } from 'react'
 
+import { IconProps } from '@/components/Icon'
 import { cn } from '@/utils/cn'
 
-import { IconProps } from '../Icon'
-
-type InputProps = ComponentProps<'input'> & {
+type TextFieldProps = Omit<ComponentProps<'input'>, 'children'> & {
   hasError?: boolean
   leftIcon?: ReactElement<IconProps>
   rightIcon?: ReactElement<IconProps>
 }
 
-export const Input = forwardRef<HTMLInputElement, InputProps>(
+export const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
   ({ className, leftIcon, rightIcon, hasError, ...props }, ref) => (
     <div className="relative flex w-full items-center">
       <input
         className={cn(
-          'flex h-11 w-full rounded-xl border border-neutral-300  px-3 py-2 text-sm text-neutral-950 file:border-0 file:bg-transparent file:text-sm file:font-medium focus-visible:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 disabled:cursor-not-allowed disabled:opacity-50 placeholder:text-neutral-400 tracking-[0.5px]',
+          'flex h-11 w-full rounded-xl border border-neutral-300  px-3 py-2 text-sm text-neutral-950 focus-visible:border-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 disabled:cursor-not-allowed disabled:opacity-50 placeholder:text-neutral-400 tracking-[0.5px]',
           leftIcon && 'pl-[40px]',
           rightIcon && 'pr-[40px]',
           hasError &&
@@ -37,4 +36,4 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
     </div>
   )
 )
-Input.displayName = 'Input'
+TextField.displayName = 'TextField'
