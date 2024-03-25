@@ -1,6 +1,10 @@
 import { createBrowserRouter } from 'react-router-dom'
 
+import { lazyLoad } from '@/utils/lazyLoad'
+
 import { AuthGuard } from './AuthGuard'
+
+const { Login } = lazyLoad(() => import('@/pages/auth/Login'))
 
 export const routes = createBrowserRouter([
   {
@@ -8,7 +12,7 @@ export const routes = createBrowserRouter([
     children: [
       {
         path: '/auth/sign-in',
-        element: <h1>Login</h1>,
+        element: <Login />,
       },
       {
         path: '/auth/sign-up',
