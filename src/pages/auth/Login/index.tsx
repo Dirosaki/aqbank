@@ -24,9 +24,9 @@ export function Login() {
           className="my-12 flex w-[476px] flex-col rounded-xl bg-white p-12 shadow-[0_24px_48px_-12px_#14151A3D]"
           onSubmit={handleSubmit}
         >
-          <h1 className="text-[2rem] font-bold text-title">Acessar conta</h1>
+          <strong className="text-[2rem] font-bold text-title">Acessar conta</strong>
 
-          <div className="mt-8 flex flex-col space-y-[18px]">
+          <div className="mt-8 flex flex-col space-y-4">
             <Input.Group>
               <Label htmlFor="email">E-mail</Label>
               <Input
@@ -65,14 +65,10 @@ export function Login() {
               />
               <Input.Helper helperText={errors.password?.message} />
             </Input.Group>
+
             <div className="flex gap-2">
               <Checkbox id="stayConnected" {...register('stayConnected')} />
-              <Label
-                htmlFor="stayConnected"
-                className="cursor-pointer transition-colors hover:text-neutral-900"
-              >
-                Permanecer conectado
-              </Label>
+              <Label htmlFor="stayConnected">Permanecer conectado</Label>
             </div>
           </div>
 
