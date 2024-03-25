@@ -52,7 +52,9 @@ export default {
           950: '#363636',
         },
         success: {
+          50: '#ECFDF4',
           200: '#9AF4C3',
+          500: '#0BBE74',
           800: '#03623F',
         },
         info: {
@@ -81,7 +83,7 @@ export default {
         banner: "url('@/assets/images/dashboard-banner.png')",
       },
       fontFamily: {
-        inter: "'Inter'",
+        inter: '"Inter", sans-serif',
       },
       keyframes: {
         'accordion-down': {
