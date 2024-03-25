@@ -2,15 +2,16 @@ import { Suspense } from 'react'
 import { RouterProvider } from 'react-router-dom'
 import { Toaster as Sonner } from 'sonner'
 
+import { SuspenseFallback } from '@/components/SuspenseFallback'
+import { AuthProvider } from '@/contexts/AuthContext'
 import { routes } from '@/Router'
 
 import '@/styles/global.css'
-import { AuthProvider } from './contexts/AuthContext'
 
 export function App() {
   return (
     <AuthProvider>
-      <Suspense fallback={<h1>Carregando</h1>}>
+      <Suspense fallback={<SuspenseFallback />}>
         <RouterProvider router={routes} />
         <Sonner
           offset={0}

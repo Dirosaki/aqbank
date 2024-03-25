@@ -82,10 +82,10 @@ export function Login() {
         </form>
 
         <span className="self-center text-sm tracking-[0.5px] text-white">
-          Não tem uma conta?{' '}
+          Não tem uma conta?
           <Link
             to="/auth/sign-up"
-            className="font-inter text-primary underline-offset-4 hover:underline"
+            className="ml-1 font-inter text-primary underline-offset-4 hover:underline focus-visible:underline focus-visible:outline-none"
           >
             Cadastre-se
           </Link>
