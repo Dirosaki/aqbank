@@ -10,7 +10,7 @@ export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
     <div className={cn('relative flex items-center justify-center w-min', className)}>
       <input
         type="checkbox"
-        className="peer size-5 cursor-pointer appearance-none rounded border border-neutral-300 transition-colors checked:bg-neutral-950 hover:border-neutral-950 checked:hover:border-neutral-300 checked:hover:bg-neutral-900 focus-visible:outline-none focus-visible:ring-[1.5px] focus-visible:ring-neutral-950/50"
+        className="peer size-5 cursor-pointer appearance-none rounded border border-neutral-300 transition-colors checked:bg-neutral-950 focus-visible:outline-none focus-visible:ring-[1.5px] focus-visible:ring-neutral-950/50"
         ref={ref}
         {...props}
       />
