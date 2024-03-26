@@ -7,6 +7,7 @@ import { AuthGuard } from './AuthGuard'
 
 const { Login } = lazyLoad(() => import('@/pages/auth/Login'))
 const { Register } = lazyLoad(() => import('@/pages/auth/Register'))
+const { Home } = lazyLoad(() => import('@/pages/dashboard/Home'))
 
 export const routes = createBrowserRouter([
   {
@@ -30,7 +31,7 @@ export const routes = createBrowserRouter([
         children: [
           {
             path: '/',
-            element: <h1>Home</h1>,
+            element: <Home />,
           },
           {
             path: '/products',

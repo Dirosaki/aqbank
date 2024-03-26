@@ -2,6 +2,7 @@ import { AddCircle } from '@/components/Icons/AddCircle'
 import { ArrowLeft } from '@/components/Icons/ArrowLeft'
 import { ArrowRight } from '@/components/Icons/ArrowRight'
 import { BankCard } from '@/components/Icons/BankCard'
+import { Barcode } from '@/components/Icons/Barcode'
 import { Check } from '@/components/Icons/Check'
 import { CheckboxCircle } from '@/components/Icons/CheckboxCircle'
 import { Close } from '@/components/Icons/Close'
@@ -14,6 +15,7 @@ import { Eye } from '@/components/Icons/Eye'
 import { EyeOff } from '@/components/Icons/EyeOff'
 import { FileChart } from '@/components/Icons/FileChart'
 import { Filter } from '@/components/Icons/Filter'
+import { Forbid } from '@/components/Icons/Forbid'
 import { Funds } from '@/components/Icons/Funds'
 import { Home } from '@/components/Icons/Home'
 import { Information } from '@/components/Icons/Information'
@@ -25,6 +27,7 @@ import { MoreX } from '@/components/Icons/MoreX'
 import { MoreY } from '@/components/Icons/MoreY'
 import { Notification } from '@/components/Icons/Notification'
 import { Pause } from '@/components/Icons/Pause'
+import { Pix } from '@/components/Icons/Pix'
 import { Play } from '@/components/Icons/Play'
 import { Question } from '@/components/Icons/Question'
 import { ShoppingBag } from '@/components/Icons/ShoppingBag'
@@ -38,6 +41,7 @@ export const icons = {
   'arrow-left': ArrowLeft,
   'arrow-right': ArrowRight,
   'bank-card': BankCard,
+  barcode: Barcode,
   check: Check,
   'checkbox-circle': CheckboxCircle,
   close: Close,
@@ -50,6 +54,7 @@ export const icons = {
   'eye-off': EyeOff,
   'file-chart': FileChart,
   filter: Filter,
+  forbid: Forbid,
   funds: Funds,
   home: Home,
   information: Information,
@@ -61,6 +66,7 @@ export const icons = {
   'more-y': MoreY,
   notification: Notification,
   pause: Pause,
+  pix: Pix,
   play: Play,
   question: Question,
   'shopping-bag': ShoppingBag,

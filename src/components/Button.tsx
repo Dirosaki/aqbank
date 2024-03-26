@@ -10,15 +10,16 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: 'bg-neutral-950 text-zinc-50 hover:bg-neutral-900',
-        outline: 'border border-zinc-200 bg-white hover:bg-zinc-100 hover:text-zinc-900',
+        outline:
+          'border border-neutral-300 bg-white text-neutral-800 hover:bg-neutral-50 focus-visible:bg-white focus-visible:ring-secondary',
         secondary: 'bg-zinc-100 text-zinc-900 hover:bg-zinc-100/80',
         ghost: 'hover:bg-zinc-100 hover:text-zinc-900',
         link: 'text-zinc-900 underline-offset-4 hover:underline',
       },
       size: {
         default: 'h-12 px-4 py-2',
-        sm: 'h-9 rounded-xl px-3',
-        lg: 'h-11 rounded-xl px-8',
+        xs: 'h-8 rounded-[10px] px-[10px] text-sm font-medium',
+        sm: 'h-11 rounded-xl px-8',
         icon: 'size-10',
       },
     },
