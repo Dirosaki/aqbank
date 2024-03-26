@@ -26,7 +26,7 @@ function toastRender(message: string, { type = 'success' }: ToastOptions = {}) {
           size={20}
         />
 
-        <span className="flex-1 text-sm font-medium leading-6 tracking-[0.05px] text-[#14151A]">
+        <span className="flex-1 text-sm font-medium leading-6 tracking-[0.5px] text-[#14151A]">
           {message}
         </span>
         <button

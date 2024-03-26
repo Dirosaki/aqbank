@@ -20,7 +20,7 @@ export function Register() {
       <aside className="w-1/2 bg-register bg-cover bg-center bg-no-repeat px-[72px] py-[84px]">
         <div className="flex max-w-[416px] flex-col gap-6 ">
           <Logo />
-          <h1 className="text-[32px] font-bold leading-[38px] tracking-[0.05px] text-white">
+          <h1 className="text-[32px] font-bold leading-[38px] tracking-[0.5px] text-white">
             Explore, descubra, e transforme sua experiência com{' '}
             <b className="text-primary">vendas digitais!</b>
           </h1>
@@ -29,7 +29,7 @@ export function Register() {
 
       <main className="flex w-1/2 p-6">
         <div className="m-auto flex w-[428px] flex-col self-stretch">
-          <strong className="text-[32px] font-bold leading-[38px] tracking-[0.05px] text-title">
+          <strong className="text-[32px] font-bold leading-[38px] tracking-[0.5px] text-title">
             Crie sua conta
           </strong>
           <form className="mb-12 mt-8 flex flex-col" onSubmit={handleSubmit}>
