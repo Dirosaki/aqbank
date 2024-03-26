@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
 
+import { DashboardLayout } from '@/layouts/Dashboard'
 import { lazyLoad } from '@/utils/lazyLoad'
 
 import { AuthGuard } from './AuthGuard'
@@ -25,8 +26,17 @@ export const routes = createBrowserRouter([
     element: <AuthGuard isPrivate />,
     children: [
       {
-        path: '/',
-        element: <h1>Home</h1>,
+        element: <DashboardLayout />,
+        children: [
+          {
+            path: '/',
+            element: <h1>Home</h1>,
+          },
+          {
+            path: '/products',
+            element: <h1>Produtos </h1>,
+          },
+        ],
       },
     ],
   },

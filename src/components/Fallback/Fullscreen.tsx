@@ -1,7 +1,7 @@
 import { Logo } from '@/components/Logo'
 import { Spinner } from '@/components/Spinner'
 
-export function SuspenseFallback() {
+export function Fullscreen() {
   return (
     <main className="flex flex-1 flex-col items-center justify-center gap-4">
       <Logo />

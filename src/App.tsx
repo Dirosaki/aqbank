@@ -2,7 +2,7 @@ import { Suspense } from 'react'
 import { RouterProvider } from 'react-router-dom'
 import { Toaster as Sonner } from 'sonner'
 
-import { SuspenseFallback } from '@/components/SuspenseFallback'
+import { Fallback } from '@/components/Fallback'
 import { AuthProvider } from '@/contexts/AuthContext'
 import { routes } from '@/Router'
 
@@ -11,7 +11,7 @@ import '@/styles/global.css'
 export function App() {
   return (
     <AuthProvider>
-      <Suspense fallback={<SuspenseFallback />}>
+      <Suspense fallback={<Fallback.Fullscreen />}>
         <RouterProvider router={routes} />
         <Sonner
           offset={0}
