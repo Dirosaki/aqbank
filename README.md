@@ -1,30 +1,68 @@
-# React + TypeScript + Vite
+# Desafio Front-End AQBank
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Screenshots
 
-Currently, two official plugins are available:
+| Login                                        | Cadastro                                     | Home                                         | Produtos                                     |
+| -------------------------------------------- | -------------------------------------------- | -------------------------------------------- | -------------------------------------------- |
+| ![Screenshot](https://imgur.com/fgbHQ7e.png) | ![Screenshot](https://imgur.com/JbnYy8E.png) | ![Screenshot](https://imgur.com/KwSMPXN.png) | ![Screenshot](https://imgur.com/C57Qr7Z.png) |
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+### Demonstração
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Visualize a aplicação:
+[https://diro-aqbank.vercel.app/](https://diro-aqbank.vercel.app/)
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+### Rodando localmente
+
+Clone o projeto
+
+```bash
+  git clone https://github.com/Dirosaki/aqbank.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Entre no diretório do projeto
+
+```bash
+  cd aqbank
+```
+
+Instale as dependências
+
+```bash
+  npm install
+```
+
+Inicie o servidor
+
+```bash
+  npm run dev
+```
+
+---
+
+### Tecnologias utilizadas
+
+**Princípais:** `ReactJS`, `Typescript`, `ViteJS`, `React-Router-Dom`, `React-Hook-Form`, `Zod`, `TailwindCSS`, `TanStack-Table`, `RadixUI` e `Sonner`.
+**Outras:** `Eslint`, `Prettier`, `Husky` e `Lint-Staged`.
+
+<details>
+<summary>Por que as escolhi?</summary>
+
+- `typescript`: Hoje em dia eu quase não vejo código "javascript", quando vejo é legado, possuo bastante experiência com `typescript` o que me deixa bem confortável e ajuda bastante na codificação.
+- `react-hook-form`: Sintaxe mais simples, mais performático e o `formik` caiu no esquecimento.
+- `tailwindCSS`: Quando se fala de produtividade acho que esta biblioteca se sobressai muito em relação ao `styled-components`, apesar de ter mais experiência com styled-components, estou optando por tailwindCSS em todos os projetos novos.
+- `react-router-dom`: Quando se fala de roteamento definitivamente essa é a biblioteca mais utilizada e com maior comunidade, além de me sentir totalmente confortável com ela.
+- `tanstack-table`: Essa é com certeza a melhor biblioteca para se trabalhar com tabelas, apesar de um pouco complexa, tem coisas na sintaxe que nunca nem cheguei a usar.
+
+</details>
+
+---
+
+### Referências
+
+- [ChatGPT](https://chat.openai.com/) - Utilizei o ChatGPT para transformar as datas em formato ISO e consultar algumas coisas de TailwindCSS.
+- [TailwindCSS Docs](https://tailwindcss.com/docs) - Consultei a documentação do Tailwind para auxiliar com a estilização.
+- [TanStack Table Docs](https://tanstack.com/table/latest/docs) - Consultei a documentação do `TanStackTable` para auxiliar na criação da tabela.
