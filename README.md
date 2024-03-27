@@ -52,9 +52,13 @@ Inicie o servidor
 <summary>Por que as escolhi?</summary>
 
 - `typescript`: Hoje em dia eu quase não vejo código "javascript", quando vejo é legado, possuo bastante experiência com `typescript` o que me deixa bem confortável e ajuda bastante na codificação.
+
 - `react-hook-form`: Sintaxe mais simples, mais performático e o `formik` caiu no esquecimento.
+
 - `tailwindCSS`: Quando se fala de produtividade acho que esta biblioteca se sobressai muito em relação ao `styled-components`, apesar de ter mais experiência com styled-components, estou optando por tailwindCSS em todos os projetos novos.
+
 - `react-router-dom`: Quando se fala de roteamento definitivamente essa é a biblioteca mais utilizada e com maior comunidade, além de me sentir totalmente confortável com ela.
+
 - `tanstack-table`: Essa é com certeza a melhor biblioteca para se trabalhar com tabelas, apesar de um pouco complexa, tem coisas na sintaxe que nunca nem cheguei a usar.
 
 </details>
