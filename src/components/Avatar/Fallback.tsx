@@ -12,7 +12,7 @@ export function Fallback({ className, children, ...props }: FallbackProps) {
   return (
     <AvatarPrimitive.Fallback
       className={cn(
-        'flex h-full w-full items-center justify-center rounded-full bg-zinc-100 dark:bg-zinc-800 select-none',
+        'flex h-full w-full items-center justify-center rounded-full bg-zinc-100 select-none',
         className
       )}
       {...props}

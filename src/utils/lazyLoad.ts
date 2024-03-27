@@ -1,9 +1,9 @@
 import { ComponentType, lazy } from 'react'
 
-export const lazyLoad = <T extends Record<string, unknown>, U extends keyof T>(
+export function lazyLoad<T extends Record<string, unknown>, U extends keyof T>(
   loader: (x?: string) => Promise<T>
-) =>
-  new Proxy({} as unknown as T, {
+) {
+  return new Proxy({} as unknown as T, {
     get: (_, componentName: string | symbol) => {
       if (typeof componentName === 'string') {
         return lazy(() =>
@@ -16,3 +16,4 @@ export const lazyLoad = <T extends Record<string, unknown>, U extends keyof T>(
       throw new Error('Invalid component name!')
     },
   })
+}

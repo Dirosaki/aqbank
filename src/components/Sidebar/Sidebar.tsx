@@ -21,7 +21,7 @@ const data = [
 
 export function Sidebar() {
   return (
-    <aside className="flex w-[296px] flex-col bg-white px-2 py-4">
+    <aside className="sticky top-0 flex h-screen w-[296px] flex-col bg-white px-2 py-4">
       <Header />
       <Navigation data={data} />
       <Footer />
