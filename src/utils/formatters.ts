@@ -6,7 +6,7 @@ export function formatCurrency(value: number) {
 }
 
 export function formatPercentage(value: number) {
-  new Intl.NumberFormat('pt-br', {
+  return new Intl.NumberFormat('pt-br', {
     style: 'percent',
     maximumFractionDigits: 2,
   }).format(value / 100)
