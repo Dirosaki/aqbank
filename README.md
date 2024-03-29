@@ -4,7 +4,7 @@
 
 | Login                                        | Cadastro                                     | Home                                         | Produtos                                     |
 | -------------------------------------------- | -------------------------------------------- | -------------------------------------------- | -------------------------------------------- |
-| ![Screenshot](https://imgur.com/fgbHQ7e.png) | ![Screenshot](https://imgur.com/JbnYy8E.png) | ![Screenshot](https://imgur.com/KwSMPXN.png) | ![Screenshot](https://imgur.com/GKQTaZe.png) |
+| ![Screenshot](https://imgur.com/fgbHQ7e.png) | ![Screenshot](https://imgur.com/JbnYy8E.png) | ![Screenshot](https://imgur.com/SPg6KS6.png) | ![Screenshot](https://imgur.com/GKQTaZe.png) |
 
 ---
 
