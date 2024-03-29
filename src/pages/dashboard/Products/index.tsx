@@ -55,12 +55,7 @@ export function Products() {
         <header className="flex justify-between">
           <Filter />
 
-          <Button
-            type="button"
-            variant="secondary"
-            size="xs"
-            className="col-span-2 mt-6 flex gap-[6px]"
-          >
+          <Button type="button" variant="secondary" size="xs" className="col-span-2 flex gap-[6px]">
             <Icon name="add-circle" size={18} />
             Cadastrar produto
           </Button>

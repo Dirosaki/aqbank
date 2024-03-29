@@ -26,7 +26,7 @@ export function Trigger() {
         variant="outline"
         size="xs"
         className={cn(
-          'col-span-2 mt-6 flex min-w-[86px] gap-2',
+          'col-span-2 flex min-w-[86px] gap-2',
           activeFilter && 'bg-neutral-950 text-white enabled:hover:bg-neutral-900'
         )}
       >
