@@ -4,10 +4,11 @@ import { useSearchParams } from 'react-router-dom'
 import { TableData } from '@/@types/table'
 import { Avatar } from '@/components/Avatar'
 import { Badge } from '@/components/Badge'
-import { Icon } from '@/components/Icon'
 import { products } from '@/data/products'
 import { formatCurrency, formatDate, formatTime } from '@/utils/formatters'
 import { getStatus } from '@/utils/getStatus'
+
+import { ProductDetailsMenu } from './ProductDetailsMenu'
 
 export function useProductTable() {
   const [searchParams] = useSearchParams()
@@ -100,15 +101,7 @@ export function useProductTable() {
     }),
     columnHelper.accessor('id', {
       header: undefined,
-      cell: () => (
-        <button
-          type="button"
-          aria-label="modal"
-          className="flex size-8 items-center justify-center rounded-[10px] text-neutral-800 outline-none transition-all focus-visible:ring-2 focus-visible:ring-neutral-300/50 [&:not(:focus-visible)]:hover:bg-neutral-100"
-        >
-          <Icon name="more-y" size={16} />
-        </button>
-      ),
+      cell: ({ row }) => <ProductDetailsMenu row={row.original} />,
     }),
   ]
 
