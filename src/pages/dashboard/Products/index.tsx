@@ -1,25 +1,14 @@
-import { useSearchParams } from 'react-router-dom'
-
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Icon } from '@/components/Icon'
 import { Info } from '@/components/Info'
 import { Table } from '@/components/Table'
-import { products } from '@/data/products'
 
 import { Filter } from './Filter'
+import { useProductTable } from './useProductTable'
 
 export function Products() {
-  const [searchParams] = useSearchParams()
-
-  const activeFilter = searchParams.get('status')
-
-  const filteredData = activeFilter
-    ? products.filter((product) => product.status === activeFilter)
-    : products
-
-  const empty = !filteredData.length
-  const quantity = filteredData.length
+  const { table, empty, quantity } = useProductTable()
 
   return (
     <div className="flex flex-1 flex-col gap-6">
@@ -78,7 +67,15 @@ export function Products() {
         </header>
 
         <div className="flex h-full flex-1 flex-col gap-4 overflow-auto">
-          <Table data={filteredData} />
+          <Table
+            table={table}
+            renderWhenEmpty={
+              <div className="flex w-full justify-center gap-2 bg-white py-6 text-sm font-medium tracking-[0.5px] text-neutral-400">
+                <Icon name="emotion-normal" size={20} />
+                <span>Nenhum produto encontrado</span>
+              </div>
+            }
+          />
 
           <span className="ml-auto text-xs leading-[18px] tracking-[0.5px] text-neutral-400">
             {empty ? 'Nenhum resultado' : `${quantity} resultados encontrados`}

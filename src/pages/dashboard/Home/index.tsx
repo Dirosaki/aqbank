@@ -8,7 +8,7 @@ import { ConversionCard } from './ConversionCard'
 export function Home() {
   return (
     <div className="grid flex-1 auto-rows-max grid-cols-[max-content_1fr] gap-6">
-      <section className="col-span-full flex h-[231px] w-full bg-banner bg-cover bg-no-repeat">
+      <section className="col-span-full flex h-[231px] w-full rounded-xl bg-banner bg-cover bg-no-repeat">
         <h1 className="my-auto ml-[42px] w-[306px] text-[40px] font-bold leading-[48px] tracking-[0.5px] text-white">
           Transforme sua paixão em <span className="text-primary">lucro!</span>
         </h1>
