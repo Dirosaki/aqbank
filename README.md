@@ -4,7 +4,7 @@
 
 | Login                                        | Cadastro                                     | Home                                         | Produtos                                     |
 | -------------------------------------------- | -------------------------------------------- | -------------------------------------------- | -------------------------------------------- |
-| ![Screenshot](https://imgur.com/fgbHQ7e.png) | ![Screenshot](https://imgur.com/JbnYy8E.png) | ![Screenshot](https://imgur.com/KwSMPXN.png) | ![Screenshot](https://imgur.com/C57Qr7Z.png) |
+| ![Screenshot](https://imgur.com/fgbHQ7e.png) | ![Screenshot](https://imgur.com/JbnYy8E.png) | ![Screenshot](https://imgur.com/KwSMPXN.png) | ![Screenshot](https://imgur.com/GKQTaZe.png) |
 
 ---
 
@@ -70,3 +70,4 @@ Inicie o servidor
 - [ChatGPT](https://chat.openai.com/) - Utilizei o ChatGPT para transformar as datas em formato ISO e consultar algumas coisas de TailwindCSS.
 - [TailwindCSS Docs](https://tailwindcss.com/docs) - Consultei a documentação do Tailwind para auxiliar com a estilização.
 - [TanStack Table Docs](https://tanstack.com/table/latest/docs) - Consultei a documentação do `TanStackTable` para auxiliar na criação da tabela.
+- [Dev.to/@stanlisberg](https://dev.to/stanlisberg/resolving-the-vercel-404-page-not-found-error-after-page-refresh-9b9) - Consultei para corrigir um bug da vercel com aplicações SPA.
